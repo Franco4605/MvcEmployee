@@ -28,6 +28,12 @@
             @Html.DisplayFor(model => model.Nombre)
         </dd>
         <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Apellido)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Apellido)
+        </dd>
+        <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Edad)
         </dt>
         <dd class = "col-sm-10">
@@ -51,6 +57,6 @@
         <input type="hidden" asp-for="Id" />
         <input type="submit" value="Delete" class="btn btn-danger" onclick="return  DeleteConfirm()" /> |
         <input type="hidden" name="del" id="del" values="" />
-        <a asp-action="Index">Back to List</a>
+        <a asp-action="Index" class="btn btn-info" >Back to List</a>
     </form>
 </div>

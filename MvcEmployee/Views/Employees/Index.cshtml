@@ -7,13 +7,16 @@
 <h1>List of Employees</h1>
 
 <p>
-    <a asp-action="Create" class="btn btn-warning">Create New</a>
+    <a asp-action="Create" class="btn btn-success">Create New</a>
 </p>
-<table class="table">
+<table class="table" bgcolor="#f0f8ff">
     <thead>
         <tr bgcolor="gray">
             <th>
                 @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+             <th>
+                @Html.DisplayNameFor(model => model.Apellido)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Edad)
@@ -32,6 +35,9 @@
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Apellido)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Edad)
